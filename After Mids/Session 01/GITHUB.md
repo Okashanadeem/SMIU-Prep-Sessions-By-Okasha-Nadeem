@@ -1,4 +1,4 @@
-# Session 1 (Part 1): Introduction to GitHub for C Programming
+# Session 1: Introduction to GitHub for C Programming
 
 ## 1. Introduction
 

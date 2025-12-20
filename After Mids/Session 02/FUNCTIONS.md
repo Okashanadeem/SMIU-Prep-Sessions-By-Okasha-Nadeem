@@ -1,4 +1,4 @@
-# Session 1 – (Part 2): Using Functions to Structure Your C Programs
+# Session 2: Using Functions to Structure Your C Programs
 
 ---
 
