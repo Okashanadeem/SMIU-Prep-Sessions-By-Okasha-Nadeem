@@ -12,6 +12,12 @@ A **Class** is like a blueprint for an object. An **Object** is an instance of t
 -   **Methods:** Actions that an object can perform.
 -   **Constructor:** A special method used to initialize objects.
 
+## The 4 Pillars of OOP
+1.  **Encapsulation:** Hiding the internal data of an object and only allowing access through public methods (getters/setters). This keeps the data safe.
+2.  **Inheritance:** Allowing a new class to inherit fields and methods from an existing class. It helps in reusing code.
+3.  **Polymorphism:** The ability of a single method to perform different tasks based on the object that calls it. (e.g., a "speak" method for a Dog vs. a Cat).
+4.  **Abstraction:** Hiding complex implementation details and showing only the essential features of an object. We use abstract classes or interfaces for this.
+
 ## Syntax Breakdown
 ```java
 public class MyClass { // Class name

@@ -145,3 +145,113 @@ Student name: Zain
 
 ### Explanation
 A constructor is called automatically when an object is created. It's used to initialize the object's data immediately.
+
+---
+
+### Question 6: Encapsulation
+Create a `BankAccount` class with a `private double balance`. Provide `deposit()` and `getBalance()` methods.
+
+### Code
+```java
+public class BankAccount {
+    private double balance;
+
+    public void deposit(double amount) {
+        if (amount > 0) balance += amount;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+```
+
+### Explanation
+By making `balance` private, we prevent direct modification. The `deposit` method ensures that only positive amounts can be added.
+
+---
+
+### Question 7: Inheritance
+Create a `Vehicle` class with a method `honk()`. Create a `Car` class that inherits from `Vehicle`.
+
+### Code
+```java
+class Vehicle {
+    void honk() {
+        System.out.println("Beep beep!");
+    }
+}
+
+class Car extends Vehicle {
+    // Car inherits honk()
+}
+
+public class TestInheritance {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        myCar.honk();
+    }
+}
+```
+
+### Explanation
+The `Car` class uses `extends` to get all behaviors from the `Vehicle` class, demonstrating code reuse.
+
+---
+
+### Question 8: Polymorphism
+Create a `Bird` class with a method `fly()`. Override `fly()` in a `Penguin` class to say "I cannot fly".
+
+### Code
+```java
+class Bird {
+    void fly() {
+        System.out.println("Flying high!");
+    }
+}
+
+class Penguin extends Bird {
+    @Override
+    void fly() {
+        System.out.println("I cannot fly, but I can swim!");
+    }
+}
+
+public class TestPolymorphism {
+    public static void main(String[] args) {
+        Bird b = new Penguin();
+        b.fly(); // Calls Penguin's version
+    }
+}
+```
+
+### Explanation
+Even though the variable type is `Bird`, the actual object is a `Penguin`, so the overridden method is called.
+
+---
+
+### Question 9: Abstraction
+Create an `abstract class Appliance` with an `abstract void turnOn()`. Create a `Fan` class that implements it.
+
+### Code
+```java
+abstract class Appliance {
+    abstract void turnOn();
+}
+
+class Fan extends Appliance {
+    void turnOn() {
+        System.out.println("Fan is spinning.");
+    }
+}
+
+public class TestAbstraction {
+    public static void main(String[] args) {
+        Appliance myFan = new Fan();
+        myFan.turnOn();
+    }
+}
+```
+
+### Explanation
+Abstraction allows us to define *what* an appliance should do (turn on) without specifying *how* every appliance does it.
